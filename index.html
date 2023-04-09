@@ -97,7 +97,7 @@
 </head>
 
 <body>
-<!--更改为你女朋友的头像-->
+<!--頭像-->
 <div class="cs">
     <img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t39.30808-1/301583871_801157224346882_470645975854647882_n.jpg?stp=dst-jpg_p200x200&_nc_cat=110&ccb=1-7&_nc_sid=7206a8&_nc_ohc=f5fbe8Ql2RkAX9WhyCc&_nc_ht=scontent.ftpe8-4.fna&oh=00_AfCVQC7dQ30Uz8e_f-i5DbDtlfkw5zpUVgmblVYaW8xv6Q&oe=64389DBC" id="logo">
 </div>
@@ -110,7 +110,7 @@
 <script language="javascript">
     function show_date_time() {
         window.setTimeout("show_date_time()", 1000);
-        BirthDay = new Date("4/09/2023 00:00:00");//这个日期是可以修改的
+        BirthDay = new Date("4/09/2023 00:00:00");
         today = new Date();
         timeold = (today.getTime() - BirthDay.getTime());
         sectimeold = timeold / 1000
@@ -133,7 +133,6 @@
         init: function () {
             S.Drawing.init('.canvas');
             document.body.classList.add('body--ready');
-			//想说的话
             S.UI.simulate("玫穎|I'm|頭髮|I|LOVE|You|#countdown 3|#time");
             S.Drawing.loop(function () {
                 S.Shape.render();
